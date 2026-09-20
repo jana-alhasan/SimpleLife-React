@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SimpleLife-React/static/css/main.572ac7d0.css",
+    "main.js": "/SimpleLife-React/static/js/main.15e82ad6.js",
+    "static/js/787.4f17028b.chunk.js": "/SimpleLife-React/static/js/787.4f17028b.chunk.js",
+    "index.html": "/SimpleLife-React/index.html",
+    "main.572ac7d0.css.map": "/SimpleLife-React/static/css/main.572ac7d0.css.map",
+    "main.15e82ad6.js.map": "/SimpleLife-React/static/js/main.15e82ad6.js.map",
+    "787.4f17028b.chunk.js.map": "/SimpleLife-React/static/js/787.4f17028b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.572ac7d0.css",
+    "static/js/main.15e82ad6.js"
+  ]
+}
