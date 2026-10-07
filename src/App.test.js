@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders the Simple Life page structure", () => {
+test("renders the Simple Life page shell", () => {
   render(<App />);
 
-  expect(
-    screen.getByRole("heading", { level: 1, name: /living the simple life/i })
-  ).toBeInTheDocument();
+  expect(screen.getByRole("banner")).toBeInTheDocument();
+  expect(screen.getByRole("main")).toBeInTheDocument();
   expect(screen.getByRole("contentinfo")).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /home/i })).toBeInTheDocument();
 });
