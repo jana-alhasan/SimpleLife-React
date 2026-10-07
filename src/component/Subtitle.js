@@ -3,7 +3,7 @@ import './Subtitle.css'
 
 const Subtitle = () => {
   return (
-    <p class="subtitle">A blog exploring minimalism in life</p>
+    <p className="subtitle">A blog exploring minimalism in life</p>
   )
 }
 
