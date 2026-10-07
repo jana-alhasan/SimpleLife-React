@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders the Simple Life page structure", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  expect(
+    screen.getByRole("heading", { level: 1, name: /living the simple life/i })
+  ).toBeInTheDocument();
+  expect(screen.getByRole("contentinfo")).toBeInTheDocument();
 });
