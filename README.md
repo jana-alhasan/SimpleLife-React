@@ -1,28 +1,39 @@
 # Simple Life — React Version
 
-A React rebuild of my [Living the Simple Life](https://github.com/jana-alhasan/Living-the-Simple-Life)
-project — the same personal blog-style layout, this time broken into reusable
-React components instead of static HTML/CSS.
+A small React fundamentals project that rebuilds my earlier static [Living the Simple Life](https://github.com/jana-alhasan/Living-the-Simple-Life) page as reusable components.
 
-## 🎯 Why Two Versions?
+**Live demo:** https://jana-alhasan.github.io/SimpleLife-React/
 
-I built this project intentionally as a companion to the original HTML/CSS
-version, to practice converting a static design into a component-based React
-architecture — extracting the header, navigation, articles, and sidebar
-widgets into independent, reusable components.
+## Purpose
 
-## 🛠️ Built With
+This project is intentionally narrow. I used it to practice decomposing a static HTML/CSS layout into a React component tree rather than adding routing, APIs, global state, or backend behavior that the page does not need.
 
-- React
-- CSS (component-scoped stylesheets per component)
+## Verified implementation
 
-## 🧩 Structure
+- React 18 component composition
+- Reusable page sections for the header, navigation, articles, sidebar content, and footer
+- Props-based content reuse across smaller components
+- Responsive CSS layout and project assets
+- A focused render test for the actual page shell
 
-Each section of the layout (Header, Nav, Main, Article, Footer, sidebar
-widgets) is its own component under `src/component/`, styled with a matching
-CSS file.
+## Structure
 
-## 🎯 What I Learned
+The UI lives under `src/component/`, with page sections separated into small components and matching CSS files. `App.js` composes the top-level Header, Main, and Footer.
 
-Breaking down a single static page into independent, reusable React
-components, and structuring props/composition instead of one large HTML file.
+## Run locally
+
+```bash
+npm ci
+npm start
+```
+
+Run the focused test and production build with:
+
+```bash
+npm test -- --watchAll=false
+npm run build
+```
+
+## Evidence boundary
+
+This is a **training/fundamentals project**, not a full application. It demonstrates React component decomposition and responsive CSS; it does not claim routing, API integration, authentication, state-management libraries, or backend functionality.
