@@ -3,7 +3,9 @@ import './Continue.css'
 
 const Continue = () => {
   return (
-    <a href='#' className="article-read-more">CONTINUE READING</a>
+    <span className="article-read-more" aria-label="Continue reading placeholder">
+      CONTINUE READING
+    </span>
   )
 }
 
